@@ -33,7 +33,7 @@ import main.java.models.DatabaseConnection;
  *
  * @author Mher
  */
-public class AccountController implements Initializable {
+public class SettingsController implements Initializable {
     @FXML private ImageView userPhoto;
     @FXML private Label studentUserName;
     @FXML private Label studentName;

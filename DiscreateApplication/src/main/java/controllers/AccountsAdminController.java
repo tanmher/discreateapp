@@ -148,8 +148,7 @@ public class AccountsAdminController implements Initializable{
         String value2 = firstnameTextField.getText();
         String value3 = lastnameTextField.getText();
         String value4 = courseSectionTextField.getText();
-        
-        if(value1 == "" && value2 == "" && value3 == "" && value4 == ""){
+        if(verifyFields()){
             try {
                 DatabaseConnection connectNow = new DatabaseConnection();
                 Connection connectDB = connectNow.getConnection();
@@ -165,6 +164,7 @@ public class AccountsAdminController implements Initializable{
                 firstnameTextField.clear();
                 lastnameTextField.clear();
                 courseSectionTextField.clear();
+                warningLabel.setText("");
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, e);
             }
@@ -172,6 +172,53 @@ public class AccountsAdminController implements Initializable{
             warningLabel.setText("Enter user details");
         }
     }
+    public boolean verifyFields() {
+        String fname = firstnameTextField.getText();
+        String lname = lastnameTextField.getText();
+        String uname = usernameTextField.getText();
+        String cSection = courseSectionTextField.getText();
+        
+        int letterCount = 0;
+        int numberCount = 0;
+
+        /*
+         * Loop through the password and count all the letters and characters
+         */
+        for (int i = 0; i < uname.length(); i++) {
+            char c = uname.charAt(i);
+
+            if (Character.toString(c).matches("[a-zA-Z]")) {
+                letterCount++;
+            }
+
+            if (Character.toString(c).matches("[0-9]")) {
+                numberCount++;
+            }
+        }
+
+        // check empty fields
+        if(fname.trim().equals("") || lname.trim().equals("") || uname.trim().equals("") || cSection.trim().equals(""))
+        {
+            warningLabel.setText("One Or More Fields Are Empty");
+            return false;
+        }
+        
+        else if(uname.length() < 8){
+            warningLabel.setText("Username and Password should atleast 8 characters long,\n must have atleast of 6 letters,and 2 numbers, no symbols");
+            return false;       
+        }
+        else if(letterCount < 6 || numberCount < 2){
+            warningLabel.setText("Username should atleast 8 characters long, must have atleast of 6 letters,\n and 2 numbers, no symbols");
+            return false;
+        }
+        
+        // if everything is ok
+        else{
+            return true;
+        }
+        
+    }
+    
     
     public void closeOnAction(ActionEvent event) throws IOException{
         UserSession.closeUpdate(event);

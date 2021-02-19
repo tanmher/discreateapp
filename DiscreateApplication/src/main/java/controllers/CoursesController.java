@@ -5,7 +5,7 @@
  */
 package main.java.controllers;
 
-import static main.java.controllers.HomeController.staticBorderPane;
+import static main.java.controllers.DashboardController.staticBorderPane;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -111,7 +111,7 @@ public class CoursesController implements Initializable {
             }
             grid.setVgap(10);
         } catch (IOException ex) {
-            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DashboardController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     

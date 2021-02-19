@@ -269,8 +269,8 @@ public class Lesson02Controller implements Initializable {
     }
     
     public void nextClick(MouseEvent event){
-        btnNext.setText("Next");
         if(pageNum < 13){
+            btnNext.setText("Next");
             warningLabel.setText("");
             pageNum = pageNum + 1;     
             if(pageNum == 11){
@@ -292,7 +292,6 @@ public class Lesson02Controller implements Initializable {
                     quizFinalScore.setText(UserSession.getScoreQuiz02() + " / 5");
                     btnNext.setText("Back to Home"); 
                 }
-                Integer integer = Integer.parseInt(UserSession.getUserName());
                 String username = UserSession.getUserName();
                 String queryTotalUsers = "UPDATE `users` SET `quiz2`= '"+ finalScore +"' WHERE `username`='"+ username +"'";
                 DatabaseConnection connectNow = new DatabaseConnection();

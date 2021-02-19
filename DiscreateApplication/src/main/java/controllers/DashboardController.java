@@ -24,7 +24,7 @@ import main.java.models.Progress;
 import main.java.models.UserSession;
 
 
-public class HomeController implements Initializable {
+public class DashboardController implements Initializable {
     @FXML private BorderPane borderPane;
     @FXML private AnchorPane homeScreen;
     @FXML private Label initialsName;
@@ -120,7 +120,7 @@ public class HomeController implements Initializable {
             grid.setVgap(5);
 
         } catch (IOException ex) {
-            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DashboardController.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         
@@ -181,7 +181,7 @@ public class HomeController implements Initializable {
         loadUI("/main/resources/view/calculators");
     }
     @FXML public void settings(MouseEvent mouseEvent) {
-        loadUI("/main/resources/view/account");
+        loadUI("/main/resources/view/settings");
     }
     @FXML public void Lesson01(MouseEvent mouseEvent) {
         loadUI("/main/resources/view/lesson01");

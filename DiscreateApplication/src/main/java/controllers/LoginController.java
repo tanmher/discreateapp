@@ -86,7 +86,7 @@ public class LoginController implements Initializable {
                             UserSession.setAllProgress(l1, l2, l3, l4,q1,q2,q3,q4);
                             UserSession.setUserInfo(fname, lname, uname, courseSection);
                             
-                            root = FXMLLoader.load(getClass().getResource("/main/resources/view/homeStudent.fxml"));
+                            root = FXMLLoader.load(getClass().getResource("/main/resources/view/dashboardStudent.fxml"));
                         }else{
                             UserSession.setUserInfo(fname, lname, uname, "Administrator");
                             root = FXMLLoader.load(getClass().getResource("/main/resources/view/dashboardAdmin.fxml"));

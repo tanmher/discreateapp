@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.AccountController">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.SettingsController">
    <children>
       <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="680.0" prefWidth="1080.0" style="-fx-background-color: #094067;">
          <children>
@@ -26,24 +26,11 @@
                         <Font name="Century Gothic" size="14.0" />
                      </font>
                   </Button>
-                  <HBox layoutX="74.0" layoutY="148.0" prefHeight="53.0" prefWidth="669.0">
-                     <children>
-                        <Label fx:id="studentName" alignment="BASELINE_LEFT" text="Mher John Tan" textFill="WHITE">
-                           <font>
-                              <Font name="Arial Bold" size="48.0" />
-                           </font>
-                        </Label>
-                        <Button alignment="BOTTOM_RIGHT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="27.0" prefWidth="25.0" style="-fx-background-color: transparent;">
-                           <graphic>
-                              <ImageView fitHeight="22.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../images/edit-button.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                        </Button>
-                     </children>
-                  </HBox>
+                  <Label fx:id="studentName" alignment="BASELINE_LEFT" layoutX="74.0" layoutY="152.0" text="Mher John Tan" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Label>
                   <Button layoutX="1018.0" layoutY="46.0" mnemonicParsing="false" onAction="#minimizeOnAction" styleClass="closeButton" stylesheets="@../css/styles.css" text="—" textFill="WHITE">
                      <font>
                         <Font name="Century Gothic" size="14.0" />
@@ -117,24 +104,6 @@
                </children>
             </HBox>
             <Label layoutX="345.0" layoutY="618.0" prefHeight="20.0" prefWidth="74.0" text="Dicreate 2021" textFill="WHITE" />
-            <Button layoutX="307.0" layoutY="246.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="25.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fitHeight="22.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/edit-button.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="307.0" layoutY="317.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="25.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fitHeight="22.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/edit-button.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
             <Label layoutX="81.0" layoutY="230.0" text="Course and Section" textFill="#3da9fc">
                <font>
                   <Font name="Arial" size="14.0" />

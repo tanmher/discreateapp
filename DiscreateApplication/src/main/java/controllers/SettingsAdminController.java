@@ -23,9 +23,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javax.swing.JOptionPane;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import main.java.models.DatabaseConnection;
 
 /**
  * FXML Controller class

@@ -11,7 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
-import static main.java.controllers.HomeController.staticBorderPane;
+import static main.java.controllers.DashboardController.staticBorderPane;
 
 /**
  *

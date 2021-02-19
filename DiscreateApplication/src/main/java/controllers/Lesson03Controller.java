@@ -5,8 +5,6 @@
  */
 package main.java.controllers;
 
-import java.io.File;
-import static main.java.controllers.QuizController.finalScore;
 import static main.java.controllers.QuizController.score;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -154,8 +152,9 @@ public class Lesson03Controller implements Initializable {
     }
 
     public void nextClick(MouseEvent event){
-        btnNext.setText("Next");
+        
         if(pageNum < 9){
+            btnNext.setText("Next");
             warningLabel.setText("");
             pageNum = pageNum + 1;
             

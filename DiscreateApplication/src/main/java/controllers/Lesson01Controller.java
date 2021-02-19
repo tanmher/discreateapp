@@ -159,8 +159,9 @@ public class Lesson01Controller implements Initializable {
         primaryStage.setIconified(true);
     }
     public void nextClick(MouseEvent event){
-        btnNext.setText("Next");
+        
         if(pageNum < 12){
+            btnNext.setText("Next");
             warningLabel.setText("");
             pageNum = pageNum + 1;
             

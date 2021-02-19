@@ -96,7 +96,7 @@ public class RegisterController implements Initializable {
                         String courseSection = courseTextField.getText();
                         UserSession.setUserInfo(fname, lname, uname, courseSection);
                         
-                        Parent root = FXMLLoader.load(getClass().getResource("/main/resources/view/homeStudent.fxml"));
+                        Parent root = FXMLLoader.load(getClass().getResource("/main/resources/view/dashboardStudent.fxml"));
                         Stage homeStage = new Stage();
 
                         homeStage.initStyle(StageStyle.UNDECORATED);
