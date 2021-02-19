@@ -21,6 +21,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -68,7 +69,10 @@ public class Lesson01Controller implements Initializable {
     @FXML private ResourceBundle resources;
     @FXML private URL location;
     @FXML private ImageView btn_stop;
-
+    @FXML private TextField firstInteger;
+    @FXML private TextField secondInteger;
+    @FXML private Text solution;
+   
     private Integer pageNum = 0;
     private AnchorPane[] contents = new AnchorPane[13];
     ToggleGroup toggleChoices01 = new ToggleGroup();
@@ -158,6 +162,18 @@ public class Lesson01Controller implements Initializable {
         Stage primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         primaryStage.setIconified(true);
     }
+    
+    public void showSolution(MouseEvent event) {
+        int fInteger = Integer.parseInt(firstInteger.getText());
+        int sInteger = Integer.parseInt(secondInteger.getText());
+        int q = fInteger / sInteger;
+        int r = fInteger % sInteger;
+        
+        solution.setText("a = qb + r \n" 
+                + fInteger + " = " + q + " x " + sInteger + " + " + r + "\n"
+                + "q = " + q + ", r = " + r); 
+    }
+    
     public void nextClick(MouseEvent event){
         
         if(pageNum < 12){

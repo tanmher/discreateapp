@@ -466,60 +466,6 @@
                         </Text>
                      </children>
                   </AnchorPane>
-                  <AnchorPane fx:id="content03" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
-                     <children>
-                        <Text layoutX="160.0" layoutY="113.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a =  qb + r&#10;158 = 9 x 17 + 5&#10;so q = 9, r  =5" wrappingWidth="128.9599609375">
-                           <font>
-                              <Font name="Arial" size="14.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="88.0" layoutY="63.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Use the division algorithm to findthe quotient and remainder when&#10;a = 158 and b = 17" wrappingWidth="878.9599609375">
-                           <font>
-                              <Font name="Arial" size="14.0" />
-                           </font>
-                        </Text>
-                        <Label layoutX="59.0" layoutY="24.0" text="Example" textFill="#094067">
-                           <font>
-                              <Font name="Arial Bold" size="14.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="59.0" layoutY="185.0" text="Try it yourself" textFill="#094067">
-                           <font>
-                              <Font name="Arial Bold" size="14.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="88.0" layoutY="214.0" text="First Integer">
-                           <font>
-                              <Font name="Arial" size="14.0" />
-                           </font>
-                        </Label>
-                        <TextField layoutX="88.0" layoutY="238.0" prefHeight="30.0" prefWidth="300.0" />
-                        <Label layoutX="88.0" layoutY="278.0" text="Second Integer">
-                           <font>
-                              <Font name="Arial" size="14.0" />
-                           </font>
-                        </Label>
-                        <TextField layoutX="88.0" layoutY="302.0" prefHeight="30.0" prefWidth="300.0" />
-                        <Label layoutX="91.0" layoutY="342.0" text="q">
-                           <font>
-                              <Font name="Arial" size="14.0" />
-                           </font>
-                        </Label>
-                        <TextField layoutX="89.0" layoutY="361.0" prefHeight="30.0" prefWidth="129.0" />
-                        <Label layoutX="260.0" layoutY="344.0" text="r">
-                           <font>
-                              <Font name="Arial" size="14.0" />
-                           </font>
-                        </Label>
-                        <TextField layoutX="258.0" layoutY="361.0" prefHeight="30.0" prefWidth="129.0" />
-                        <Button layoutX="501.0" layoutY="209.0" mnemonicParsing="false" style="-fx-background-color: #3da9fc;" text="Show Solution" textFill="WHITE" />
-                        <Text layoutX="547.0" layoutY="261.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a =  qb + r&#10;158 = 9 x 17 + 5&#10;so q = 9, r  =5" wrappingWidth="128.9599609375">
-                           <font>
-                              <Font name="Arial" size="14.0" />
-                           </font>
-                        </Text>
-                     </children>
-                  </AnchorPane>
                   <AnchorPane fx:id="content01" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
                      <children>
                         <Label layoutX="29.0" layoutY="21.0" text="Table of Contents" textFill="#3da9fc">
@@ -579,6 +525,60 @@
                               <Font name="Arial Bold" size="14.0" />
                            </font>
                         </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="content03" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Text layoutX="160.0" layoutY="113.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a =  qb + r&#10;158 = 9 x 17 + 5&#10;so q = 9, r  =5" wrappingWidth="128.9599609375">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="88.0" layoutY="63.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Use the division algorithm to findthe quotient and remainder when&#10;a = 158 and b = 17" wrappingWidth="878.9599609375">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="59.0" layoutY="24.0" text="Example" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="59.0" layoutY="185.0" text="Try it yourself" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="88.0" layoutY="214.0" text="First Integer">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="firstInteger" layoutX="88.0" layoutY="238.0" prefHeight="30.0" prefWidth="300.0" />
+                        <Label layoutX="88.0" layoutY="278.0" text="Second Integer">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="secondInteger" layoutX="88.0" layoutY="302.0" prefHeight="30.0" prefWidth="300.0" />
+                        <Label layoutX="91.0" layoutY="342.0" text="q">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="89.0" layoutY="361.0" prefHeight="30.0" prefWidth="129.0" />
+                        <Label layoutX="260.0" layoutY="344.0" text="r">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="258.0" layoutY="361.0" prefHeight="30.0" prefWidth="129.0" />
+                        <Button layoutX="501.0" layoutY="209.0" mnemonicParsing="false" onMouseClicked="#showSolution" style="-fx-background-color: #3da9fc;" text="Show Solution" textFill="WHITE" />
+                        <Text fx:id="solution" layoutX="527.0" layoutY="266.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="146.9599609375">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
                      </children>
                   </AnchorPane>
                </children>

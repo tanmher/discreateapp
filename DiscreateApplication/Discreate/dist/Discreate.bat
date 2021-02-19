@@ -1,0 +1,1 @@
+ java --module-path ..\libraries\lib --add-modules javafx.controls,javafx.fxml,javafx.media -jar DiscreateApplication.jar
