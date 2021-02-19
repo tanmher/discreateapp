@@ -1,0 +1,110 @@
+.closeButton {
+    -fx-background-color:none;
+}
+.closeButton:hover {
+    -fx-background-color:#dddddd;
+}
+
+.blueButton{
+    -fx-background-color:#3DA9FC;
+}
+.blueButton:hover{
+    -fx-background-color: transparent;
+    -fx-border-color:#3DA9FC;
+    -fx-border-width:2;
+    -fx-text-fill:#3DA9FC;
+}
+.redButton {
+    -fx-background-color:#ed4566;
+}
+.redButton:hover{
+    -fx-background-color: transparent;
+    -fx-border-color:#ed4566;
+    -fx-border-width:2;
+    -fx-text-fill:#ed4566;
+}
+
+.blackButton {
+    -fx-background-color:black;
+}
+.blackButton:hover{
+    -fx-background-color: transparent;
+    -fx-border-color:black;
+    -fx-border-width:2;
+    -fx-text-fill:black;
+}
+
+.borderButton {
+    -fx-background-color: transparent;
+    -fx-border-color: #094067;
+    -fx-border-width:1.5;
+    -fx-border-radius:5;
+}
+.borderButton:hover {
+    -fx-background-color:#dddddd;
+}
+
+/* Navigation Buttons Effects */
+.navButton{
+    -fx-background-color:none;
+    -fx-background-radius: 30 0 0 30;
+}
+.navButton:hover {
+    -fx-background-color:#3DA9FC;
+}
+.navButton:focused{
+    -fx-background-color:#3DA9FC;
+}
+
+/* Courses Effects */
+.courses {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0.3, 0.0, 0.0);
+}
+
+.courses{
+    -fx-background-color:#ffffff;
+}
+.courses:hover {
+    -fx-background-color:#f2f2f2;
+}
+
+.mainCourse {
+    -fx-background-color:#094067;
+}
+.mainCourse:hover {
+    -fx-background-color: #062F4D;
+}
+
+.lessonButton {
+    -fx-background-color: #ed4566;
+}
+.lessonButton:hover {
+    -fx-background-color: transparent;
+    -fx-border-color:#3DA9FC;
+    -fx-text-fill:#3DA9FC;
+}
+
+/* Statistics Effects */
+.statistics {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0.3, 0.0, 0.0);
+    -fx-background-color:#ffffff;
+}
+
+.statistics:hover {
+    -fx-background-color:#f2f2f2;
+}
+.statisticsAdmin{
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0.3, 0.0, 0.0);
+    -fx-background-color:#3DA9FC;
+}
+.statisticsAdmin:hover {
+    -fx-background-color:#2C88CF;
+}
+
+
+.calculatorButton {
+    -fx-background-color:#094067;
+}
+.calculatorButton:hover {
+    -fx-background-color: #062F4D;
+}

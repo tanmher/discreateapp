@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1174.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.QuizController">
+   <children>
+      <Label fx:id="quizLabel" text="Primes Quiz" textFill="#3da9fc">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" left="50.0" right="20.0" top="50.0" />
+         </VBox.margin>
+      </Label>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1. Which of the statement is false about the prime numbers?">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" left="80.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </Text>
+      <RadioButton fx:id="question01_1" mnemonicParsing="false" text="Can be an integer or whole number">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question01_2" mnemonicParsing="false" text="It has only two factors, 1 and itself">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question01_3" mnemonicParsing="false" text="All primes are odd numbers except for 2">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question01_4" mnemonicParsing="false" text="Primes are not always greater than 1">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2. Which statement is false about Fundamental Theorem of Arithmetic? ">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" left="80.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </Text>
+      <RadioButton fx:id="question02_1" mnemonicParsing="false" text="It is also called unique factorization theorem">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question02_2" mnemonicParsing="false" text="It is also called unique-prime-factorization theorem">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question02_3" mnemonicParsing="false" prefHeight="17.0" prefWidth="549.0" text=" States that any integer can be made by multiplying Prime Numbers together">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question02_4" mnemonicParsing="false" text="States that the integer must not be a prime number">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3. Is Fermat's Theorem also known as Fermat's Primality Test?">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" left="80.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </Text>
+      <RadioButton fx:id="question03_1" mnemonicParsing="false" text="True">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question03_2" mnemonicParsing="false" text="False">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question03_3" mnemonicParsing="false" text="Maybe">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question03_4" mnemonicParsing="false" text="Not sure">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4. What is the calculated value of ϕ(81) using Euler Phi Function? ">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" left="80.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </Text>
+      <RadioButton fx:id="question04_1" mnemonicParsing="false" text="52">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question04_2" mnemonicParsing="false" text="54">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question04_3" mnemonicParsing="false" text="56">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question04_4" mnemonicParsing="false" text="58">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5. How many solution of x in linear congruence 16x≡24 (mod 72)?" wrappingWidth="568.6201171875">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" left="80.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </Text>
+      <RadioButton fx:id="question05_1" mnemonicParsing="false" text="2">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question05_2" mnemonicParsing="false" text="4">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question05_3" mnemonicParsing="false" text="8">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question05_4" mnemonicParsing="false" text="16">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+   </children>
+</VBox>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1174.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.QuizController">
+   <children>
+      <Label fx:id="quizLabel" text="Modular Arithmetic Quiz" textFill="#3da9fc">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" left="50.0" right="20.0" top="50.0" />
+         </VBox.margin>
+      </Label>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1. What day is the Independence Day by 2021?">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" left="80.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </Text>
+      <RadioButton fx:id="question01_1" mnemonicParsing="false" text="Sunday">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question01_2" mnemonicParsing="false" text="Friday">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question01_3" mnemonicParsing="false" text="Saturday">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question01_4" mnemonicParsing="false" text="Tuesday">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2. What day is on February 28,2030?">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" left="80.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </Text>
+      <RadioButton fx:id="question02_1" mnemonicParsing="false" text="Monday">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question02_2" mnemonicParsing="false" text="Tuesday">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question02_3" mnemonicParsing="false" text="Wednesday">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question02_4" mnemonicParsing="false" text="Thursday">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3. 3110040860 –Abstract Algebra by J.S. Robinson is a?   ">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" left="80.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </Text>
+      <RadioButton fx:id="question03_1" mnemonicParsing="false" text="13-digit Invalid ISBN code">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question03_2" mnemonicParsing="false" text="10-digit Invalid ISBN code">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question03_3" mnemonicParsing="false" text="10-digit Valid ISBN code">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question03_4" mnemonicParsing="false" text="13-digit Valid ISBN code">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4. ISBN stands for? ">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" left="80.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </Text>
+      <RadioButton fx:id="question04_1" mnemonicParsing="false" text="International Standard Book Number">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question04_2" mnemonicParsing="false" text="International Serial Bar Number">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question04_3" mnemonicParsing="false" text="International Serial Book Number">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question04_4" mnemonicParsing="false" text="International Standard Bar Number">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5. Decrypt &quot;XUTYQNLMY&quot;, using the formula C≡P+5(mod26).   " wrappingWidth="568.6201171875">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" left="80.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </Text>
+      <RadioButton fx:id="question05_1" mnemonicParsing="false" text="SPOTSIGHT">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question05_2" mnemonicParsing="false" text="SLOTLIGHT">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question05_3" mnemonicParsing="false" text="SLOWLIGHT">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+      <RadioButton fx:id="question05_4" mnemonicParsing="false" text="SPOTLIGHT">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </RadioButton>
+   </children>
+</VBox>

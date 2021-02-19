@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.Lesson01Controller">
+   <children>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label layoutX="59.0" layoutY="43.0" text="Discrete Structure 2" textFill="#094067">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="71.0" text="Modular Arithmetic" textFill="#094067">
+               <font>
+                  <Font name="Arial Bold" size="48.0" />
+               </font>
+            </Label>
+            <StackPane layoutX="60.0" layoutY="147.0" prefHeight="454.0" prefWidth="967.0">
+               <children>
+                  <AnchorPane fx:id="content10" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Text layoutX="91.0" layoutY="96.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Find the quotient and remainder when the first integer is divided by the second" wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="62.0" layoutY="39.0" text="Exercises" textFill="#ef4565">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="91.0" layoutY="137.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. 78, 11&#10;2. 57, 75&#10;3. -325, 13&#10;4. -23, 25&#10;5. 1028, 34" wrappingWidth="104.22702026367188">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="content09" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Label layoutX="42.0" layoutY="30.0" text="Property" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="71.0" layoutY="64.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If ac≡bc(mod n) and gcd(c,n)=1, then a≡b(mod n)." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial Italic" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="40.0" layoutY="85.0" text="Example" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="69.0" layoutY="119.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="78=48(mod 5); that is, 6*13=6*8(mod 5). Since gcd(6,5)=1, we can cancel 6 from both sides. That is, 13= 8(mod 5), which is clearly true." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="40.0" layoutY="140.0" text="Property" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="69.0" layoutY="174.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If ac≡bc(mod n) and p |/ c, where p is a prince number, then a≡b(mod p)." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial Italic" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="40.0" layoutY="188.0" text="Example" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="69.0" layoutY="222.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-35=45(mod 8)&#10;5*(-7)=5*9(mod 8)&#10;-7=9(mod 8)" wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="40.0" layoutY="293.0" text="Property" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="69.0" layoutY="327.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If ac≡bc(mod n) and gcd(c,n)=d, then a≡b(mod n/d)." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial Italic" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="69.0" layoutY="351.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can verify that 8*37 = 8*7(mod 12). Since gcd(8,12)=4, by the previous theorem, we can cancel 8 from both sides: 37 = 7(mod 3)." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="content08" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Text layoutX="70.0" layoutY="61.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If a≡b(mod n) and c≡d(mod n), then a-c ≡ b-d(mod n)." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial Italic" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="47.0" layoutY="25.0" text="Properties" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="70.0" layoutY="112.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="23 = 13(mod 5) and 30 = -5(mod 5). So, 23-30 = 13-(-5)(mod 5); that is , -7 = 18(mod 5), which is true." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="47.0" layoutY="76.0" text="Example" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="83.0" layoutY="192.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. a+c ≡ b+c (mod n)&#10;2. a-c ≡ b-c (mod n)&#10;3. ac ≡ bc (mod n)&#10;4. a^2 ≡ b^2 (mod n)" wrappingWidth="801.0270385742188">
+                           <font>
+                              <Font name="Arial Italic" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="47.0" layoutY="129.0" text="Properties" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="70.0" layoutY="166.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If a≡b(mod n) and c is any integer, then" wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="70.0" layoutY="318.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If a≡b(mod n), then a^m ≡ b^m (mod n) for any positive integer m." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial Italic" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="47.0" layoutY="282.0" text="Properties" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="70.0" layoutY="368.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- We now examine some additional properties of congruences&#10;- The cancellation property of multiplication says, if ac = bc and c≠0, then a=b.&#10;- Does this have an analogous result for congruences?" wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="47.0" layoutY="332.0" text="Take Note:" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="610.0" layoutY="367.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- In other words, if ac≡bc(mod n) and c !≡0 (mod n), is a≡b(mod n)?&#10;- Consider: 3*8 ≡ 3*4(mod 6), but 8 !≡4 (mod 6)" wrappingWidth="327.427001953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="content07" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Text layoutX="78.0" layoutY="67.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a≡b(mod n) if and only if a and b leave the same remainder when divided by n." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="49.0" layoutY="30.0" text="Theorem 5.2" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="78.0" layoutY="125.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="48 = 28(mod 5); both 48 and 28, when divided by 5, leave the same remainder 3.When 29 and -3 are divided by 8, the remainders are the same, 5, so 29 = -3(mod 8)." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="49.0" layoutY="88.0" text="Example" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="78.0" layoutY="207.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a mod b = remainder when a is divided by b.Thus, if a≡r(mod n) and 0≤r&lt;n, then a mod n=r. Conversely, if a mod n = r, then a≡r(mod n) and 0≤r&lt;n." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="49.0" layoutY="170.0" text="Definition 5.2" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="78.0" layoutY="289.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The following theorem shows that two congruences with the same modulus can be added and multiplied, just as with equality." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="49.0" layoutY="252.0" text="Properties" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="93.0" layoutY="313.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Let a≡b(mod n) and c≡d(mod n). Then&#10;1.  a+c ≡ b+d (mod n) and&#10;2. ac≡bd (mod n)." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="78.0" layoutY="415.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We have 17 = -4(mod 3) and 28 = 7(mod 3). By Theorem 5.3, 17 + 28 =-4 + 7 (mod 3). That is, 45 = 3(mod 3).Also, 17*28 = (-4)*7 (mod 3); that is,476 = -28(mod 3)." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="49.0" layoutY="378.0" text="Example" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="content06" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Label layoutX="39.0" layoutY="30.0" text="Definition 1.7 (Linear Combination)" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="68.0" layoutY="71.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Let a,bEZ with a,b not both 0. a and b are relatively prime whenever gcd⁡(a,b)=1." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="39.0" layoutY="87.0" text="Example" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="68.0" layoutY="126.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="gcd⁡(1,-1)= gcd⁡(2,5)= gcd⁡(-9,16)= gcd⁡(-27,-35)=1." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="39.0" layoutY="149.0" text="Definition 1.8" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="68.0" layoutY="183.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Congruence modulo n Let n be a positive integer. Two integers a and b are said to be congruent modulo n, symbolized by  a=b(mod n) if n divides the difference a-b.If a is not congruent to b modulo n, then a is incongruent to be modulo n; we then write a !=b(mod n)." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="40.0" layoutY="224.0" text="Example" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="69.0" layoutY="263.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Since 5|(23-3), we write 23=3(mod 5).&#10;6| (48-12) -&gt; 48 = 12(mod 6).&#10;20 != 3(mod 4) since 4!|(20-3)." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="40.0" layoutY="329.0" text="Theorem 5.1" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="69.0" layoutY="363.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a≡b(mod n) if and only if a=b + kn for some integer k.&#10;" wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="39.0" layoutY="380.0" text="Example" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="69.0" layoutY="414.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="23 = 3(mod 5) and 23= 3 + 4 * 5&#10;49 = -5 + 9 * 6, so 49 = -5(mod 6)" wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="content05" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Label layoutX="43.0" layoutY="24.0" text="Theorem 1.6 (Linear Combination)" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="66.0" layoutY="61.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Let a,bEZ with a,b not both 0. Then there exists x, yEZ such that gcd ⁡(a,b)=ax+by." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="43.0" layoutY="85.0" text="Recall:" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="66.0" layoutY="120.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By a linear combination of a and b, we mean an expression of the form ax+by, where x and y are intergers.The next theorem indicates that gcd(a,b) can be represented as a linear combination of a and b. " wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="43.0" layoutY="170.0" text="Example " textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="66.0" layoutY="203.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="gcd (12,30) = 6 = (-12)2 + 30 * 1&#10;gcd (8,36) = 4 = (-8)4 + (-36)(-1)" wrappingWidth="318.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="43.0" layoutY="254.0" text="Euclidean Algorithm" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="66.0" layoutY="290.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Euclidean Algorithm is a technique for quickly finding the GCD of two integers. The Euclidean Algorithm for finding gcd⁡(a,b)is as follows:" wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="105.0" layoutY="337.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.  If a=0, then gcd⁡(a,b)=b, since the gcd⁡(0,b)=b, and we can stop.&#10;2.  If b=0, then gcd⁡(a,b)=a, since the gcd⁡(a,0)=a, and we can stop.&#10;3.  Write a in division algorithm from a=bq+r.&#10;4.  Find gcd⁡(b,r) using the Euclidean Algorithm since gcd⁡(a,b)=gcd⁡(b,r)" wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="content04" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF;">
+                     <children>
+                        <Label layoutX="42.0" layoutY="30.0" text="Definition 1.5 (Greatest Common Divisor)" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="73.0" layoutY="69.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Let a,bEZ with a,b not both 0. The greatest common divisor of a and b, denoted by gcd⁡(a,b), is the largest integer d such that d|a and d|b." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="42.0" layoutY="133.0" text="Example " textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="73.0" layoutY="171.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The positive divisors of -12 are 1,2,3,4,6,12.The positive divisors of 30 are 1,2,3,5,6,10,15,30.Hence, the positive common divisors of -12 and 30 are 1,2,3,6.Because 6 is the largest of these integers, it follows that gcd (-12,30)=6." wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="73.0" layoutY="237.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Similarly, we can show that  " wrappingWidth="858.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="104.0" layoutY="267.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="gcd(-5,5)=5&#10;gcd(8,17)=1&#10;gcd(-8,-36)=4." wrappingWidth="318.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="content02" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Label layoutX="30.0" layoutY="28.0" text="Example 1.1" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="56.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3|9, 5|10, but 3∤7.">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="30.0" layoutY="90.0" text="Example 1.2" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="56.0" layoutY="131.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Let a, b, cEZ𝑍    &#10;&#9;1. If a|b &quot;and &quot; a|c, then a|(b + c)     &#10;&#9;2. If a|b, then a|bc.      &#10;&#9;3. If a|b and b|c, then a|c𝑐 (i.e., transitivity)      &#10;&#9;4. If a|b and b|c, then a|mb+nc for any m, nEZ" wrappingWidth="878.9599609375">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="30.0" layoutY="250.0" text="Theorem 1.4 (Division Algorithm)" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="56.0" layoutY="290.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Let a,bEZ with b &gt; 0. Then there exist unique integers q and r satisfying&#10;&#9;&#9;a= qb + r, 0≤ r &lt;b&#10;&#10;The integers q and r are called, respectively, the quotient and remainder in the division of a by b.&#10;" wrappingWidth="878.9599609375">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="quizReady" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Label layoutX="61.0" layoutY="44.0" text="Test your knowledge!" textFill="#3da9fc">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Text fill="#ed4566" layoutX="61.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have 3 attempts to take the quiz. Make sure that you're ready to start.">
+                           <font>
+                              <Font name="Arial Italic" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="61.0" layoutY="111.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Now that you finish all the lessons about Modular Arithmethic. Review the lessons if necessary.  Let's test your knowledge and see what you got." wrappingWidth="605.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="quizContent" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <ScrollPane fx:id="quizScroll" prefHeight="454.0" prefWidth="967.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="quizScore" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Label layoutX="71.0" layoutY="40.0" text="Congratulations!" textFill="#ed4566">
+                           <font>
+                              <Font name="Arial Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="71.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Congratulations you have passed the your exam.">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="348.0" fitWidth="431.0" layoutX="484.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/quizPassed.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="71.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Score is:">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="quizFinalScore" fill="#3da9fc" layoutX="71.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4 / 5">
+                           <font>
+                              <Font name="Arial Bold" size="36.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="content03" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Text layoutX="160.0" layoutY="113.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a =  qb + r&#10;158 = 9 x 17 + 5&#10;so q = 9, r  =5" wrappingWidth="128.9599609375">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="88.0" layoutY="63.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Use the division algorithm to findthe quotient and remainder when&#10;a = 158 and b = 17" wrappingWidth="878.9599609375">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="59.0" layoutY="24.0" text="Example" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="59.0" layoutY="185.0" text="Try it yourself" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="88.0" layoutY="214.0" text="First Integer">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="88.0" layoutY="238.0" prefHeight="30.0" prefWidth="300.0" />
+                        <Label layoutX="88.0" layoutY="278.0" text="Second Integer">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="88.0" layoutY="302.0" prefHeight="30.0" prefWidth="300.0" />
+                        <Label layoutX="91.0" layoutY="342.0" text="q">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="89.0" layoutY="361.0" prefHeight="30.0" prefWidth="129.0" />
+                        <Label layoutX="260.0" layoutY="344.0" text="r">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="258.0" layoutY="361.0" prefHeight="30.0" prefWidth="129.0" />
+                        <Button layoutX="501.0" layoutY="209.0" mnemonicParsing="false" style="-fx-background-color: #3da9fc;" text="Show Solution" textFill="WHITE" />
+                        <Text layoutX="547.0" layoutY="261.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a =  qb + r&#10;158 = 9 x 17 + 5&#10;so q = 9, r  =5" wrappingWidth="128.9599609375">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="content01" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Label layoutX="29.0" layoutY="21.0" text="Table of Contents" textFill="#3da9fc">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="70.0" layoutY="53.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-alignment: left;" text="Theorem 1.1" />
+                        <Button layoutX="70.0" layoutY="79.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-alignment: left;" text="Theorem 1.2" />
+                        <Button layoutX="70.0" layoutY="105.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-alignment: left;" text="Theorem 1.3" />
+                        <Button layoutX="70.0" layoutY="131.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-alignment: left;" text="Theorem 1.4" />
+                        <Button layoutX="256.0" layoutY="79.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-alignment: left;" text="Try it yourself" />
+                        <Button layoutX="256.0" layoutY="53.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-alignment: left;" text="Exercises" />
+                        <Button layoutX="256.0" layoutY="105.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-alignment: left;" text="Quiz" />
+                        <Separator layoutX="29.0" layoutY="167.0" prefHeight="30.0" prefWidth="892.0" />
+                        <Text layoutX="61.0" layoutY="394.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Let a,bEZ with a≠0. We say that a divides b, denoted by a|b, if there exists some kEZ such that b = ak." wrappingWidth="389.4794921875">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="56.0" layoutY="249.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Divisibility means that a number goes evenly (with no remainder) into a number. For example, 2 goes evenly into 34 so 34 is divisible by 2. But 3 would leave us witha remainder, so 34 is not divisible by 3.  " wrappingWidth="416.626953125">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="35.0" layoutY="357.0" text="Definition 1.1" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="205.0" text="Divisibility" textFill="#094067">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="CENTER" layoutX="532.0" layoutY="245.0" prefHeight="210.0" prefWidth="417.0">
+                           <children>
+                              <MediaView fx:id="mv" fitHeight="150.0" fitWidth="200.0" />
+                              <HBox alignment="CENTER" prefHeight="40.0" prefWidth="75.0" spacing="10.0">
+                                 <children>
+                                    <ImageView fx:id="playpause" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#onClick_btn_pause" onMouseEntered="#btplayChange1" onMouseExited="#btplayChange2" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/play-circle.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="btn_stop" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#onClick_btn_stop" onMouseEntered="#btstopChange1" onMouseExited="#btstopChange2" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/stop-circle.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Label layoutX="548.0" layoutY="205.0" text="Video Tutorial" textFill="#ed4566">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </StackPane>
+            <Button layoutX="60.0" layoutY="629.0" mnemonicParsing="false" onMouseClicked="#backClick" prefHeight="25.0" prefWidth="100.0" text="Back" />
+            <Button fx:id="btnNext" layoutX="927.0" layoutY="629.0" mnemonicParsing="false" onMouseClicked="#nextClick" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #3da9fc;" text="Next" textFill="WHITE" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="warningLabel" fill="#ef4565" layoutX="486.0" layoutY="626.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+            <Button layoutX="1051.0" mnemonicParsing="false" onAction="#closeOnAction" styleClass="closeButton" stylesheets="@../css/styles.css" text="X">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="1016.0" mnemonicParsing="false" onAction="#minimizeOnAction" styleClass="closeButton" stylesheets="@../css/styles.css" text="—">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

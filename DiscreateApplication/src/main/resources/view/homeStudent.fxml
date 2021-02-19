@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-radius: 20; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.HomeController">
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="680.0" prefWidth="200.0" style="-fx-background-color: #242424;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="84.0" prefWidth="200.0">
+               <children>
+                  <Pane layoutX="14.0" layoutY="22.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #fff; -fx-background-radius: 5;">
+                     <children>
+                        <Label fx:id="initialsName" alignment="CENTER" contentDisplay="CENTER" layoutY="-1.0" prefHeight="43.0" prefWidth="41.0" text="MT">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label fx:id="studentName" alignment="CENTER" contentDisplay="CENTER" layoutX="62.0" layoutY="27.0" text="Mher John Tan" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="studentCourse" alignment="CENTER" contentDisplay="CENTER" layoutX="62.0" layoutY="44.0" text="BSCS 2-2" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="80.0" />
+               </padding>
+            </AnchorPane>
+            <Button fx:id="navHome" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#home" prefHeight="50.0" prefWidth="200.0" styleClass="navButton" stylesheets="@../css/styles.css" text="   Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="iconNavHome" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/home-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding></Button>
+            <Button fx:id="navAccount" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#courses" prefHeight="50.0" prefWidth="200.0" styleClass="navButton" stylesheets="@../css/styles.css" text="   Courses" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="iconNavProgress" fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/courses-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding></Button>
+            <Button fx:id="navAbout" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#about" prefHeight="50.0" prefWidth="200.0" styleClass="navButton" stylesheets="@../css/styles.css" text="   Calculators" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="iconNavCourses" fitHeight="22.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/progress-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding></Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#settings" prefHeight="50.0" prefWidth="200.0" styleClass="navButton" stylesheets="@../css/styles.css" text="  Settings" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="iconNavSettings" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/settings-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding></Button>
+            <AnchorPane prefHeight="328.0" prefWidth="200.0" />
+            <HBox prefHeight="51.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="brandingImageView" fitHeight="34.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Discreate.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="30.0" top="8.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label alignment="BASELINE_CENTER" text="Discreate" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="homeScreen" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="73.0" layoutY="457.0" text="Popular Courses" textFill="#ed4566">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="73.0" layoutY="487.0" prefHeight="186.0" prefWidth="208.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" styleClass="courses" stylesheets="@../css/styles.css">
+               <children>
+                  <Text layoutX="84.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modular Arithmetic" wrappingWidth="94.40625">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="iconImageView01" fitHeight="47.0" fitWidth="44.0" layoutX="28.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icon-lesson2-blue.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#3c3c3c" layoutX="24.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modular arithmetic is a system of arithmetic for integers, where numbers &quot;wrap around&quot; when reaching a certain value, called the modulus." wrappingWidth="168.904296875" />
+                  <Button layoutX="116.0" layoutY="149.0" mnemonicParsing="false" onMouseClicked="#Lesson01" style="-fx-background-color: transparent;" text="See more" textFill="#ef4565" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="73.0" layoutY="51.0" prefHeight="218.0" prefWidth="947.0" style="-fx-background-color: #094067; -fx-background-radius: 15;">
+               <children>
+                  <ImageView fx:id="welcomeImageView" fitHeight="243.0" fitWidth="388.0" layoutX="496.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/home_01.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="52.0" layoutY="47.0" text="Welcome!" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Text fill="WHITE" layoutX="52.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Take the mathematics courses and learn something new every day. Best online courses for free. " wrappingWidth="332.904296875" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="320.0" layoutY="487.0" prefHeight="186.0" prefWidth="208.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" styleClass="courses" stylesheets="@../css/styles.css">
+               <children>
+                  <Text layoutX="72.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Applications of Modular Arithmetic" wrappingWidth="123.40625">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="iconImageView02" fitHeight="47.0" fitWidth="44.0" layoutX="24.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icon-lesson1-blue.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#3c3c3c" layoutX="23.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modular arithmetic is referenced in number theory, computer science, and the visual and musical arts." wrappingWidth="173.904296875" />
+                  <Button layoutX="115.0" layoutY="147.0" mnemonicParsing="false" onMouseClicked="#Lesson02" style="-fx-background-color: transparent;" text="See more" textFill="#ef4565" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="609.0" layoutY="293.0" text="Progress" textFill="#ef4565">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <GridPane fx:id="grid" layoutX="609.0" layoutY="332.0" prefHeight="334.0" prefWidth="410.0">
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <Label layoutX="73.0" layoutY="293.0" text="Statistics" textFill="#ed4566">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="73.0" layoutY="324.0" prefHeight="110.0" prefWidth="105.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" styleClass="statistics" stylesheets="@../css/styles.css">
+               <children>
+                  <Label fx:id="coursesCompleted" layoutX="20.0" layoutY="17.0" text="1">
+                     <font>
+                        <Font name="Arial Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="19.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Courses&#10;Completed" wrappingWidth="63.40625" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="200.0" layoutY="324.0" prefHeight="110.0" prefWidth="104.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" styleClass="statistics" stylesheets="@../css/styles.css">
+               <children>
+                  <Label fx:id="coursesInProgress" layoutX="20.0" layoutY="17.0" text="4">
+                     <font>
+                        <Font name="Arial Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="19.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Courses&#10;in Progress" wrappingWidth="63.40625" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="324.0" layoutY="324.0" prefHeight="110.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" styleClass="statistics" stylesheets="@../css/styles.css">
+               <children>
+                  <Label fx:id="averageQuizScore" layoutX="26.0" layoutY="17.0" text="1">
+                     <font>
+                        <Font name="Arial Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="25.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average&#10;Quiz Score" wrappingWidth="63.40625" />
+                  <ImageView fx:id="quizLogo" fitHeight="74.0" fitWidth="65.0" layoutX="114.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/quiz-logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Button layoutX="1051.0" mnemonicParsing="false" onAction="#closeOnAction" styleClass="closeButton" stylesheets="@../css/styles.css" text="X">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="1020.0" mnemonicParsing="false" onAction="#minimizeOnAction" styleClass="closeButton" stylesheets="@../css/styles.css" text="—">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

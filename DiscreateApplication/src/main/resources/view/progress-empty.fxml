@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="progressItem" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="109.0" prefWidth="325.0" style="-fx-background-color: #eeeeee; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.ProgressController">
+   <children>
+      <Text fill="#cdcdcd" layoutX="115.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Take courses now" />
+   </children>
+</AnchorPane>

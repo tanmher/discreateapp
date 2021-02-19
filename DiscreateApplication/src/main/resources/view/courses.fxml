@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.CoursesController">
+   <children>
+      <ScrollPane layoutX="59.0" layoutY="125.0" prefHeight="554.0" prefWidth="354.0" style="-fx-background-color: transparent;">
+         <content>
+            <GridPane fx:id="grid" prefHeight="552.0" prefWidth="352.0" style="-fx-background-color: #fff;">
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Label layoutX="55.0" layoutY="45.0" text="Courses" textFill="#094067">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Pane layoutX="388.0" layoutY="53.0" prefHeight="11.0" prefWidth="632.0" style="-fx-background-color: #3da9fc; -fx-background-radius: 10;" />
+      <Pane layoutX="315.0" layoutY="53.0" prefHeight="11.0" prefWidth="54.0" style="-fx-background-color: #3da9fc; -fx-background-radius: 10;" />
+      <Pane layoutX="268.0" layoutY="53.0" prefHeight="11.0" prefWidth="36.0" style="-fx-background-color: #3da9fc; -fx-background-radius: 10;" />
+      <Pane layoutX="233.0" layoutY="53.0" prefHeight="11.0" prefWidth="24.0" style="-fx-background-color: #3da9fc; -fx-background-radius: 10;" />
+      <Pane layoutX="205.0" layoutY="53.0" prefHeight="11.0" prefWidth="18.0" style="-fx-background-color: #3da9fc; -fx-background-radius: 10;" />
+      <Pane layoutX="180.0" layoutY="53.0" prefHeight="11.0" prefWidth="11.0" style="-fx-background-color: #3da9fc; -fx-background-radius: 10;" />
+      <Label layoutX="55.0" layoutY="96.0" text="Your Courses" textFill="#094067">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="411.0" layoutY="104.0" prefHeight="305.0" prefWidth="313.0" style="-fx-background-radius: 20;" styleClass="mainCourse" stylesheets="@../css/styles.css">
+         <children>
+            <Label layoutX="116.0" layoutY="42.0" prefHeight="55.0" prefWidth="157.0" text="Modular&#10;Arithmetic&#10;" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="iconLesson01" fitHeight="53.0" fitWidth="54.0" layoutX="44.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon-lesson2-blue.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="42.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modular arithmetic is a system of arithmetic for integers, which considers the remainder. In modular arithmetic, numbers &quot;wrap around&quot; upon reaching a given fixed quantity (this given quantity is known as the modulus) to leave a remainder. " wrappingWidth="236.3203125" />
+            <Button layoutX="206.0" layoutY="248.0" mnemonicParsing="false" onMouseClicked="#Lesson01" styleClass="lessonButton" stylesheets="@../css/styles.css" text="Learn Now" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="brandImage" fitHeight="188.0" fitWidth="291.0" layoutX="422.0" layoutY="479.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/courses-img.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="759.0" layoutY="104.0" prefHeight="565.0" prefWidth="262.0" spacing="35.0">
+         <children>
+            <AnchorPane prefHeight="166.0" prefWidth="262.0" style="-fx-background-radius: 20;" styleClass="courses" stylesheets="@../css/styles.css">
+               <children>
+                  <ImageView fx:id="iconLesson02" fitHeight="53.0" fitWidth="42.0" layoutX="27.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icon-lesson1-blue.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="86.0" layoutY="9.0" prefHeight="55.0" prefWidth="149.0" text="Applications of&#10;Modular Arithmetic" textFill="#4a4a4a">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="32.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="One of the foundations of number theory, touching on almost every aspect of its study, and provides key examples." wrappingWidth="198.3203125" />
+                  <Button layoutX="161.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#Lesson02" styleClass="lessonButton" stylesheets="@../css/styles.css" text="Learn Now" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="166.0" prefWidth="262.0" style="-fx-background-radius: 20;" styleClass="courses" stylesheets="@../css/styles.css">
+               <children>
+                  <ImageView fx:id="iconLesson03" fitHeight="53.0" fitWidth="42.0" layoutX="27.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icon-lesson3-blue.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="86.0" layoutY="9.0" prefHeight="55.0" prefWidth="149.0" text="Primes" textFill="#4a4a4a">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="32.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modular arithmetic is referenced in number theory, group theory, ring theory,etc." wrappingWidth="198.3203125" />
+                  <Button layoutX="161.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#Lesson03" styleClass="lessonButton" stylesheets="@../css/styles.css" text="Learn Now" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="166.0" prefWidth="262.0" style="-fx-background-radius: 20;" styleClass="courses" stylesheets="@../css/styles.css">
+               <children>
+                  <ImageView fx:id="iconLesson04" fitHeight="53.0" fitWidth="42.0" layoutX="27.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icon-lesson4-blue.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="86.0" layoutY="9.0" prefHeight="55.0" prefWidth="149.0" text="Applications of&#10;Primes" textFill="#4a4a4a">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="32.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modular arithmetic is often used to calculate checksums that are used within identifiers." wrappingWidth="198.3203125" />
+                  <Button layoutX="161.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#Lesson04" styleClass="lessonButton" stylesheets="@../css/styles.css" text="Learn Now" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Button layoutX="1051.0" mnemonicParsing="false" onAction="#closeOnAction" styleClass="closeButton" stylesheets="@../css/styles.css" text="X">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="1016.0" mnemonicParsing="false" onAction="#minimizeOnAction" styleClass="closeButton" stylesheets="@../css/styles.css" text="—">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
