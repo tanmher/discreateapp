@@ -7,29 +7,6 @@ This app is created for you to help you work through your homework problems, ace
 
 git clone https://github.com/tanmher/discreateapp.git
 
-
-## Download JavaFX 1.3.1 SDK
-
-https://www.oracle.com/java/technologies/java-archive-javafx-downloads.html
-
-## Download MysqlConnector Java 8.23
-
-https://dev.mysql.com/downloads/windows/installer/8.0.html
-
-## How to Install JavaFX
-
-https://www.youtube.com/watch?v=h_3AfQhjziw
-
-## Add JavaFX and MysqlConnector to Library
-
-Right Click the project, then go to Properties. In the Libraries- Compile, click the plus button and add your JavaFX and Mysqlconnector. Go to Libraries - Run, then add the same files.
-
-## Setting up VM Options
-
-Right Click the project, then go to Properties. In the Run, paste the code below in the VM Options.
-
---module-path "..\libraries\bin" --add-modules javafx.controls,javafx.fxml,javafx.media
-
 ## Connect Database
 
 Open XAMPP Control Panel, start Apache and MySQL.
